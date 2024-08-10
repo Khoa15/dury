@@ -8,3 +8,4 @@ Dury is a simple note-taking app developed in Java, utilizing Spring Boot and th
 - Le Tri Cuong
 - Tran Minh Hoa
 - Nguyen Duy Tai
+- Tran Ngoc Thanh Son (responsible for the majority of the UI/UX design for android.)
