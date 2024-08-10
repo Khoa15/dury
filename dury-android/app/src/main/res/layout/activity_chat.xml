@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.User.ChatActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue"
+        app:titleTextColor="@color/white">
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar1"
+        android:layout_above="@+id/sendMessageLayout"
+        android:id="@+id/chatrecycler"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="15dp"
+        android:id="@+id/sendMessageLayout">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhap tin nhan..."
+            android:layout_alignParentLeft="true"
+            android:padding="15dp"
+            android:id="@+id/messageEdit"
+            android:background="@drawable/rounded_home"/>
+        <ImageView
+            android:id="@+id/sendMessageIcon"
+            android:src="@drawable/icon_send"
+            android:layout_alignParentRight="true"
+            android:padding="15dp"
+            android:layout_width="50dp"
+            android:layout_height="60dp"/>
+    </RelativeLayout>
+</RelativeLayout>

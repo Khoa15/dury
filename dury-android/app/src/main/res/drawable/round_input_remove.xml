@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- round_input.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State when EditText is focused -->
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <stroke android:width="1dp" android:color="#FFB87006" /> <!-- Màu border khi được focus -->
+            <corners android:radius="8dp" /> <!-- Độ cong của góc -->
+        </shape>
+    </item>
+    <!-- Default state -->
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="1dp" android:color="#FFB87006" /> <!-- Màu border mặc định -->
+            <corners android:radius="8dp" /> <!-- Độ cong của góc -->
+        </shape>
+    </item>
+</selector>

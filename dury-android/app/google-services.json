@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "372579630642",
+    "firebase_url": "https://dury-846a3-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "dury-846a3",
+    "storage_bucket": "dury-846a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372579630642:android:eabf6905739eb8964bc62b",
+        "android_client_info": {
+          "package_name": "com.example.dury"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOd0bDAq53gD9_JFJ2SxpYHej9cSS0v9M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

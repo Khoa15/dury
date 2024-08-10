@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.User.LoginActivity"
+    android:background="@drawable/login_background">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="401dp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="330dp"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:id="@+id/edtTxtEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="hp09.com@gmail.com"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/rounded_login"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/imgCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_done"
+                app:layout_constraintTop_toTopOf="@id/edtTxtEmail"
+                app:layout_constraintStart_toEndOf="@id/edtTxtEmail"
+                app:layout_constraintBottom_toBottomOf="@id/edtTxtEmail"
+                android:layout_marginStart="-40dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtTxtPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/rounded_login"
+                android:ems="10"
+                android:text="123456"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:textSize="20sp"
+
+                tools:ignore="MissingConstraints" />
+
+
+            <ImageView
+                android:id="@+id/imgShowPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_show_password"
+                app:layout_constraintTop_toTopOf="@id/edtTxtPass"
+                app:layout_constraintStart_toEndOf="@id/edtTxtPass"
+                app:layout_constraintBottom_toBottomOf="@id/edtTxtPass"
+
+                android:layout_marginStart="-40dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+
+            android:paddingLeft="20dp"
+            android:paddingRight="28dp"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:alpha="0.7"
+                android:text="Remember me" />
+
+            <TextView
+                android:id="@+id/txtViewForgetPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="Quên mật khẩu" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/white"
+            android:padding="18dp"
+            android:text="Login"
+            android:textColor="#3B84F1"
+            android:textSize="20sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+           android:layout_margin="0dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="28dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nhacnho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+                android:text="Bạn chưa có tài khoản?" />
+
+            <Button
+                android:id="@+id/btnToSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_toEndOf="@id/nhacnho"
+                android:text="Đăng ký"
+                android:textColor="@color/blue"
+                android:background="@drawable/transparent_bg" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
